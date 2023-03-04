@@ -1,0 +1,42 @@
+# wareification's langnd syntax highlighting
+# license: unlicence
+
+syntax langnd
+header "^#!.*langnd"
+tabgives "  "
+
+# keywords
+color cyan "\<(if|else|otherwise|while|catch|argument|return|break|continue|throw|import|from|core)\>"
+
+# value keywords
+color brightmagenta "\<(null|false|true)\>"
+
+# snippets
+color white "\\" "/"
+
+# list literals
+color brightblue "\[" "\]"
+color blue ","
+
+# map literals
+color brightblue "\{" "\}"
+color blue ":"
+
+# function literals
+color brightblue "<" ">"
+color blue "\(" "\)"
+
+# numbers
+color red "[-\+]?[0-9]+"
+
+# strings
+color brightyellow "\"([^"\\]|\\.)*\""
+
+# identifiers
+color brightwhite "\$[0-9a-zA-Z]+"
+color brightwhite "\$\"([^"\\]|\\.)*\""
+
+# comments
+color white "#.*$"
+
+color ,green "[[:space:]]+$"
