@@ -20,8 +20,6 @@ fi
 # Setup fail safe to clean debug build if the program quits early
 failearly()
 {
-    rm valgrind-log.txt
-
     cd "$project"
     make clean
     exit 1
