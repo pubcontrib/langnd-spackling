@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# check-santiziers: utility for running the tests of langnd through Clang
+# check-sanitizers: utility for running the tests of langnd through Clang
 # sanitizers to search for memory errors and undefined behavior
 
 # Remember the starting work directory to save non-standard test results to
