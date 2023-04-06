@@ -27,7 +27,7 @@ color brightblue "<" ">"
 color blue "\(" "\)"
 
 # numbers
-color red "[-\+]?[0-9]+"
+color red "[-\+]?[0-9]+(.[0-9]+)?"
 
 # strings
 color brightyellow "\"([^"\\]|\\.)*\""
