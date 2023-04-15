@@ -32,7 +32,7 @@ trap failearly INT QUIT ABRT
 # Goto test directory and run test suite on the debug build wrapped in memory
 # tests
 cd test
-sh run.sh 'valgrind --leak-check=full --error-exitcode=64 -q --log-file=valgrind-log.txt ../bin/langnd'
+valgrind --leak-check=full --error-exitcode=64 -q --log-file=valgrind-log.txt ../bin/langnd -f entry.txt
 
 if [ -f valgrind-log.txt -a -s valgrind-log.txt ]
 then

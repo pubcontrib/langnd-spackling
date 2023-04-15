@@ -29,8 +29,7 @@ trap failearly INT QUIT ABRT
 
 # Goto test directory and run test suite on the debug build wrapped in memory
 # tests
-cd test
-sh run.sh ../bin/langnd
+make check
 
 # Safely clean debug build
 cd "$project"
