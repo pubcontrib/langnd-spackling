@@ -10,7 +10,7 @@ project="$HOME/repos/sourcehut/langnd"
 # Goto project directory and rebuild binary with more debug info
 cd "$project"
 make clean
-make CFLAGS='-ansi -pedantic -Wall -Werror -Wextra -g'
+make CFLAGS='-ansi -pedantic -Wall -Werror -Wextra -g3'
 
 if [ $? -ne 0 ]
 then
